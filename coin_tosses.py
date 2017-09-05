@@ -7,7 +7,7 @@ def coin_tosses(num):
     line = "Attempt #{}: Throwing a coin... It's a {}! ... "
     line += "Got {} head(s) so far and {} tail(s) so far"
     for i in range(1, num + 1):
-        toss = random.randint(0,1)
+        toss = round(random.random())
         if toss == 0:
             toss_str = "head"
         else:
